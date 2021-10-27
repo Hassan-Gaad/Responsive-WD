@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+
+    <style>
+        #navbar-container {
+            background-color: darkslategray;
+        }
+
+        #myCollCard {
+            background-color: rgb(95, 117, 146);
+        }
+
+        .colorTheme {
+            background-color: rgb(95, 117, 146);
+        }
+
+        #myCollCard1 {
+            background-color: rgb(143, 149, 156);
+        }
+
+        .btnCheckedLight {
+            background-color: lightgreen;
+
+        }
+
+        .btnTimesLight {
+            background-color: lightcoral;
+        }
+
+        /* * {
+            outline: 1px solid #f00 !important;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar-container">
+        <!-- Container wrapper -->
+        <div class="container-fluid ">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0 me-0 text-light" href="#">
+                    <i class="fas fa-home">
+                        <span class="fs-6">Home</span>
+                    </i>
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="#">
+                            <i class="fas fa-globe-americas text-light"></i>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="#">
+                            <i class="fas fa-user text-light"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-envelope text-light"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex ">
+
+
+                <!-- Notifications -->
+                <a class="text-reset me-3 dropdown-toggle hidden-arrow " href="#" id="navbarDropdownMenuLink"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bell text-light"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="#">Some news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Another news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+
+                <!-- Avatar -->
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt=""
+                        loading="lazy" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-lg-3">
+                <div class="container-fluid p-0">
+                    <div class="row row-cols-1">
+                        <div class="col mt-4">
+                            <div class="card ">
+                                <img class="img-fluid rounded-circle align-self-center"
+                                    src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="" width="150">
+                                <div class="card-body mt-4">
+                                    <div class="mt-2">
+                                        <span>
+                                            <i class="fas fa-edit me-3"></i>
+                                            <span class="card-title">Designer,UI</span>
+                                        </span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span>
+                                            <i class="fas fa-home me-3"></i>
+                                            <span class="card-title">London,UK</span>
+                                        </span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span>
+                                            <i class="fas fa-birthday-cake me-3"></i>
+                                            <span class="card-title">April 1, 1996</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-4">
+                            <div id="myCollCard" class="card  text-light">
+                                <div class="card-body">
+                                    <div class="mt-2">
+                                        <span>
+                                            <i class="fas fa-pen me-3"></i>
+                                            <span class="card-title">My Group</span>
+                                        </span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span>
+                                            <i class="fas fa-calendar me-3"></i>
+                                            <span class="card-title">My Events</span>
+                                        </span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span>
+                                            <i class="fas fa-photo-video me-3"></i>
+                                            <span class="card-title">My Photos</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-4">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Interests</h5>
+                                    <div class="container-fluid">
+                                        <div class="row gap-2 text-center ">
+                                            <div class="col bg-dark rounded text-light p-1 ">News</div>
+                                            <div class="col bg-dark rounded text-light p-1 me-2">W3Schools</div>
+                                            <div class="col bg-dark rounded text-light p-1 me-2">Labs</div>
+                                            <div class="col bg-dark rounded text-light p-1 me-2">Games</div>
+                                        </div>
+                                        <div class="row gap-2 text-center mt-3">
+                                            <div id="myCollCard" class="col  rounded text-light p-1 ">Frinds</div>
+                                            <div id="myCollCard" class="col  rounded text-light p-1 me-2">Games</div>
+                                            <div id="myCollCard" class="col  rounded text-light p-1 me-2">Football</div>
+                                            <div id="myCollCard" class="col  rounded text-light p-1 me-2">Coding</div>
+                                        </div>
+                                        <div class="row gap-2 text-center mt-3">
+                                            <div id="myCollCard1" class="col  rounded text-light p-1 ">Frinds</div>
+                                            <div id="myCollCard1" class="col  rounded text-light p-1 me-2">Games</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                <strong>Hey!</strong>
+                                <p>people are looking at your profile , finde out who?</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-lg-6">
+                <div class="container-fluid p-0">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="fw-light">
+                                        This is a paragraph.
+                                    </p>
+                                    <input class="form-control form-control-lg" type="text"
+                                        placeholder="Waste Your Time Here !" aria-label=".form-control-lg example">
+                                    <button type="button" class="btn colorTheme mt-2 ps-3 text-light"><i
+                                            class="fas fa-pen me-2 "></i>Post</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center ">
+                                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                                                class="flex-shrink-0 rounded-circle" height="45" alt=""
+                                                loading="lazy" />
+                                            <div class="ms-2 flex-grow-1">
+                                                <h6>Hassan Gad</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-row-reverse">
+                                            <p class="">1 min</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                                        nam iste ab non aliquam accusamus perspiciatis? Accusamus minus, voluptatem,
+                                        aspernatur mollitia, esse quos amet doloribus similique nisi eum facilis
+                                        numquam?</p>
+                                    <div class="d-flex mb-3">
+                                        <img src="https://mdbootstrap.com/img/new/standard/nature/117.jpg"
+                                            class="rounded-start me-1" width="50%" alt="...">
+                                        <img src="https://mdbootstrap.com/img/new/standard/nature/119.jpg"
+                                            class="rounded-end" width="50%" alt="...">
+                                    </div>
+
+                                    <button type="button" class=" btn text-light colorTheme">
+                                        <i class="fas fa-thumbs-up pe-2"></i>Like
+                                    </button>
+                                    <button type="button" class=" btn text-light colorTheme">
+                                        <i class="fas fa-comment pe-2"></i>Comment
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center ">
+                                            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                                                class="flex-shrink-0 rounded-circle" height="45" alt=""
+                                                loading="lazy" />
+                                            <div class="ms-2 flex-grow-1">
+                                                <h6>Hassan Gad</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-row-reverse">
+                                            <p class="">4 min</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                                        nam iste ab non aliquam accusamus perspiciatis? Accusamus minus, voluptatem,
+                                        aspernatur mollitia, esse quos amet doloribus similique nisi eum facilis
+                                        numquam?</p>
+                                    <button type="button" class=" btn text-light colorTheme">
+                                        <i class="fas fa-thumbs-up pe-2"></i>Like
+                                    </button>
+                                    <button type="button" class=" btn text-light colorTheme">
+                                        <i class="fas fa-comment pe-2"></i>Comment
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center ">
+                                            <img src="https://mdbootstrap.com/img/new/avatars/3.jpg"
+                                                class="flex-shrink-0 rounded-circle" height="45" alt=""
+                                                loading="lazy" />
+                                            <div class="ms-2 flex-grow-1">
+                                                <h6>Hassan Gad</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-row-reverse">
+                                            <p class="">1 min</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <img src="https://mdbootstrap.com/img/new/standard/nature/115.jpg"
+                                        class="card-img-top" alt="...">
+
+
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                                        nam iste ab non aliquam accusamus perspiciatis? Accusamus minus, voluptatem,
+                                        aspernatur mollitia, esse quos amet doloribus similique nisi eum facilis
+                                        numquam?</p>
+                                    <button type="button" class=" btn text-light colorTheme">
+                                        <i class="fas fa-thumbs-up pe-2"></i>Like
+                                    </button>
+                                    <button type="button" class=" btn text-light colorTheme">
+                                        <i class="fas fa-comment pe-2"></i>Comment
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="container-fluid">
+                    <div class="row row-cols-1">
+                        <div class="col mt-3">
+
+
+                            <div class="card text-center ">
+                                <h5 class="card-title my-3">Upcomming events</h5>
+                                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                    <img src="https://mdbootstrap.com/img/new/standard/nature/112.jpg"
+                                        class="img-fluid" />
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                    </a>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-text">Holiday</h5>
+                                    <p class="card-text">
+                                        Friday 15:00
+                                    </p>
+
+                                    <div class="d-grid gap-2">
+                                        <button class="btn colorTheme text-light" type="button">Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-3">
+                            <div class="card text-center">
+                                <h5 class="card-title my-3">Frinds Request</h5>
+                                <img src="https://mdbootstrap.com/img/new/standard/nature/113.jpg"
+                                    class="card-img-top" />
+                                <div class="card-body text-center">
+                                    <h5 class="card-text">Hassan Gad</h5>
+                                    <div class="d-grid gap-2">
+                                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                            <button type="button" class="btn btnCheckedLight">
+                                                <i class="fas fa-check text-light"></i>
+                                            </button>
+                                            <button type="button" class="btn btnTimesLight">
+                                                <i class="fas fa-times text-light"></i>
+                                            </button>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-3 card">
+                                <div class="d-flex align-items-center justify-content-center" style="height: 100px";>
+                                    <h4 class="">ADS</h4>
+                                </div>
+                            </div>
+                            <div class="col mt-3 card">
+                                <div class="d-flex align-items-center justify-content-center" style="height: 100px";>
+                                    <i class="fas fa-bug" style="font-size: 4rem;"></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+
+</html>

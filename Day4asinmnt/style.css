@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.842);
+  font-size: 18px;
+}
+
+.headerBgColor {
+  background-color: black;
+}
+
+.headerBgColor > button {
+  background-color: gray;
+  color: white;
+}
+
+.introSection {
+  background-color: #f0efef;
+}
+
+.cardHeadereFooterBgColor {
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

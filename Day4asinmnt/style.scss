@@ -1,0 +1,30 @@
+$bgcolor: rgb(255, 255, 255);
+$textcolor: rgba(0, 0, 0, 0.842);
+$fontsize: 18px;
+
+$headerBgColor: black;
+$headerBtnColor: rgb(128, 128, 128);
+
+$introSectionBgColor :rgb(240, 239, 239);
+$cardHeadereFooterBgColor: black;
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+.headerBgColor{
+    background-color: $headerBgColor;
+}
+.headerBgColor>button{
+    background-color: $headerBtnColor;
+    color: white;
+    
+}
+.introSection{
+    background-color: $introSectionBgColor;
+}
+
+.cardHeadereFooterBgColor{
+    background-color: $cardHeadereFooterBgColor;
+}

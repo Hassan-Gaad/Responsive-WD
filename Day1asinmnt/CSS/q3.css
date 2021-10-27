@@ -1,0 +1,209 @@
+body{
+    /* max-width: 800px; */
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+     padding: 0;
+    margin: 0;
+}
+.row::after
+{
+    content: "";
+    clear: both;
+}
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+@font-face {
+    font-family: Oswald;
+    src: url('../fonts/Oswald-Medium.ttf');
+}
+
+header{
+    background-color: orange;
+    display: inline-block;
+}
+
+header>img{
+    margin: 5px 10px;    
+    width: 210px;
+    float: left;
+    max-width: 20vw;
+
+}
+header>div{
+margin: 40px 10px 20px 20px;
+}
+
+#name{
+    font-size: 4vw;
+}
+
+#headerIntro>h1,#headerIntro>h5{
+    color: white;
+    font-family:sans-serif;
+    margin-bottom: 5px;
+}
+
+#headerIntro>p{
+    color: white;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 5px;
+}
+
+aside{
+    float: left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
+div>i{
+    font-size: 15pt;
+    margin-top: 2px;
+    text-align: center;
+
+}
+section>i{
+    font-size: 19pt;
+    margin-top: 2px;
+    text-align: center;
+
+}
+div>i:nth-child(odd){
+    color: orange;
+}
+.fa-facebook{
+    color: lightseagreen;
+}
+.fa-google-plus{
+    color: lightcoral;
+}
+div>i:nth-child(even){
+    color: lightseagreen;
+}
+.col{
+    display: table-cell;
+    width: 30px;
+}
+
+.imgs{
+    text-align: center;
+
+}
+
+li{
+    list-style: none;
+    line-height: 17pt;
+}
+
+section>h1{
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top:5px;
+    font: 22px bold;
+}
+
+#langMeter{
+    display: block;
+    width: 20px;
+}
+div>meter{
+    height: 30px;
+    width: 150px;
+}
+#engMeter::-webkit-meter-optimum-value { 
+    background: orange; 
+}
+
+#skills >div{
+    display: inline-block;
+    width: 20px;
+}
+
+section>meter::-webkit-meter-optimum-value{
+ 
+    background: rgb(103, 165, 223); 
+}
+
+
+#gerMeter::-webkit-meter-optimum-value { 
+    background: dodgerblue; 
+}
+
+#spanMeter::-webkit-meter-optimum-value { 
+    background: red; 
+}
+
+section>i{
+    width: 20px; 
+    height: 20px;
+    margin: 0px 10px;
+}
+#OnlineInfo >span{
+    position: relative;
+    bottom: 5px;
+    font:small-caption;
+}
+section{
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+article>h1{
+    background-color: orange;
+    width: 230PX;
+    color: white;
+    padding: 8px;
+    font-family: Oswald;
+}
+#mainSection{
+    margin-left: 20px;
+}
+.hAndP{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+}
+footer>div{
+    display: inline-block;
+    width: 260px;
+    height: 18px;
+    margin: 20px 0px;
+}
+#redDiv{
+    background-color: lightsalmon;
+}
+#yellowDiv{
+    background-color: orange;
+}
+#lightBlurDiv{
+    background-color: lightblue;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+}

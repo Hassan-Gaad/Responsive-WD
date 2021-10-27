@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/q3.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css-circular-prog-bar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="../imgs/profileImg.png" alt="">
+        <div id="col-9 headerIntro">
+            <h1 id="name">Hassan Gad</h1>
+            <h5>Profession</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repudiandae magnam commodi qui placeat,
+                inventore id harum blanditiis excepturi rem cum doloremque at numquam. Praesentium veniam nemo itaque.
+                Atque, molestiae.</p>
+
+        </div>
+    </header>
+    <div class="row">
+    <aside class="col-3">
+        <section id="contact" onmouseenter="playSound()" onmouseout="stopSound()">
+            <h1>Contact</h1>
+
+            <div class="col imgs">
+                <i class="fas fa-home"></i>
+                <i class="fal fa-mobile"></i>
+                <i class="far fa-envelope"></i>
+                <i class="fas fa-link"></i>
+                <i class="fas fa-calendar-day"></i>
+            </div>
+            <ul class="col">
+                <li>123 Sohag-Cairo EG</li>
+                <li>01125764325</li>
+                <li>Hassangelrab@gmail.com</li>
+                <li><a href="">https://Hassan-Gaad</a></li>
+                <li><time datetime="1996-09-16">Birth Date</time></li>
+                <li><video src="../mp4/sample.mp4" controls width="150" height="100"
+                        poster="../img/profileImg.png"></video></li>
+
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h1>Languages</h1>
+            <div id="langMeter">
+                <label for="engMeter"> English</label>
+                <meter id="engMeter" value=".7"></meter>
+                <label for="gerMeter">German</label>
+                <meter id="gerMeter" value=".5"></meter>
+                <label for="spanMeter">Spanish</label>
+                <meter id="spanMeter" value=".3"></meter>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+
+
+            <div class="progress-circle over50 p99">
+                <span>PS</span>
+                <div class="left-half-clipper">
+                   <div class="first50-bar"></div>
+                   <div class="value-bar"></div>
+                </div>
+             </div>
+
+             <div class="progress-circle over50 p66">
+                <span>JS</span>
+                <div class="left-half-clipper">
+                   <div class="first50-bar"></div>
+                   <div class="value-bar"></div>
+                </div>
+             </div>
+
+             <div class="progress-circle p33">
+                <span>CSS</span>
+                <div class="left-half-clipper">
+                   <div class="first50-bar"></div>
+                   <div class="value-bar"></div>
+                </div>
+             </div>
+
+        </section>
+
+        <section id="OnlineInfo">
+            <h1>online Info</h1>
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+
+            <i class="fab fa-google-plus"></i>
+            <span>google+</span>
+        </section>
+    </aside>
+
+    <section class="col-8" id="mainSection">
+
+        <article id="achievments">
+            <h1>Achievement</h1>
+            <div class="hAndP">
+                <h3>2010 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+
+            <div class="hAndP">
+                <h3>2012 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+            <div class="hAndP">
+                <h3>2015 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+        </article>
+
+
+        <article id="education">
+            <h1>Education</h1>
+            <div class="hAndP">
+                <h3>2010 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+
+            <div class="hAndP">
+                <h3>2012 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+            <div class="hAndP">
+                <h3>2015 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+        </article>
+
+
+        <article id="workExperience">
+            <h1>Work Experience</h1>
+            <div class="hAndP">
+                <h3>2010 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+
+            <div class="hAndP">
+                <h3>2012 Lorem Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum doloremque.</p>
+            </div>
+
+        </article>
+    </section>
+</div>
+
+    <footer>
+        <div id="redDiv"></div>
+        <div id="yellowDiv"></div>
+        <div id="lightBlurDiv"></div>
+    </footer>
+
+    <script>
+        function playSound() {
+            createSoundEle();
+            document.getElementById("audio").play();
+
+        }
+
+        function stopSound() {
+            document.getElementById("audio").pause();
+
+        }
+
+        function createSoundEle() {
+            var audio = document.createElement("audio");
+            audio.setAttribute("src", "../mp3/By_the_Shore.mp3");
+            audio.style.display = "hidden";
+            audio.id = "audio";
+            document.getElementById("contact").appendChild(audio);
+
+        }
+    </script>
+</body>
+
+</html>
